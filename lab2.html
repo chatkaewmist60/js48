@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <script>
+          const user = {
+               email: 'cc@gmail.com',
+               isActive: true
+          };
+          user.isActive = false;
+          console.log(user); // * 
+          user = {};
+          console.log(user); // **
+
+          // เหมือนกันทั้ง 2 แบบ เนื่องจากค่า const ไม่สามารถเปลี่ยนค่าตัวแปรได้ แต่ยังสามารถเปลี่ยน property ได้
+     </script>
+</body>
+
+</html>
